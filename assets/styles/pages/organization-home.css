@@ -1,0 +1,160 @@
+.organization {
+  background-color: var(--gray-300);
+}
+
+.organization .content-container {
+  max-width: 1440px;
+}
+
+.organization__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 24px 16px;
+  justify-items: center;
+  gap: 100px 40px;
+}
+
+.organization__image {
+  width: 100%;
+}
+
+.organization__text > p {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  text-align: justify;
+}
+
+.organization__options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  align-items: center;
+}
+
+.organization__options > p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+.organization__text h1 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 8px;
+}
+
+.organization__text h1 br {
+  display: none;
+}
+
+.organization p,
+.organization__text h1 {
+  color: var(--primary);
+  text-align: center;
+}
+
+.organization__action {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1rem;
+  line-height: 1.25rem;
+  border-radius: 40px;
+  border: none;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.organization__action i {
+  font-size: 20px;
+}
+
+@media (min-width: 768px) {
+  .organization__grid {
+    padding: 90px 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .organization__options {
+    grid-column: 1 / 3;
+    gap: 20px;
+  }
+
+  .organization__action i {
+    font-size: 32px;
+  }
+
+  .organization__text h1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  .organization__text > p {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .organization__action {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+  }
+
+  .organization__options > p {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .organization__grid {
+    grid-template-areas: 'image text' 'image options';
+  }
+
+  .organization__image {
+    grid-area: image;
+  }
+
+  .organization__text {
+    grid-area: text;
+  }
+
+  .organization__options {
+    grid-area: options;
+    align-items: flex-start;
+    padding-left: 40px;
+  }
+
+  .organization__text h1,
+  .organization__text > p {
+    text-align: right;
+  }
+
+  .organization__text h1 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+  }
+
+  .organization__text h1 br {
+    display: initial;
+  }
+
+  .organization__text > p {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .organization__action {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    padding: 16px;
+  }
+
+  .organization__options > p {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    text-align: left;
+  }
+}
