@@ -1,0 +1,403 @@
+.economy,
+.home__pillars,
+.money-safety {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.home .navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.hero-header {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../images/tourist-attractions/roman-coliseum.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero-header > * {
+  z-index: 1;
+}
+
+.hero-header:before {
+  content: '';
+  background-color: var(--overlay-dark);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-header .heading-secondary {
+  text-align: center;
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+.home__search {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 16px;
+  height: 64px;
+  width: calc(100% - 16px);
+  max-width: 1064px;
+  margin: 0 auto;
+  padding: 8px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.home__search-icon {
+  display: none;
+}
+
+.home__search input {
+  width: 100%;
+}
+
+.home__search button {
+  background: var(--primary);
+  border-radius: 16px;
+  padding: 0 20px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  border: none;
+}
+
+.home__pillars {
+  margin: 48px 0;
+}
+
+.home__pillars > .content-container {
+  display: grid;
+  gap: 24px;
+}
+
+.home__pillars > .content-container p {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+}
+
+.home__pillars > .content-container > div {
+  display: grid;
+  height: 600px;
+  border-radius: 40px;
+  background-size: cover;
+}
+
+.home__pillars > .content-container > div:nth-child(1) {
+  background-image: url('../../images/nature-places/beach-1.jpg');
+  align-items: flex-start;
+  padding-top: 80px;
+  padding-left: 60px;
+}
+
+.home__pillars > .content-container > div:nth-child(2) {
+  background-image: url('../../images/nature-places/waterfall-1.jpg');
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.home__pillars > .content-container > div:nth-child(3) {
+  background-image: url('../../images/city-places/city-1.jpg');
+  align-items: center;
+}
+
+.home__pillars > .content-container > div:nth-child(2),
+.home__pillars > .content-container > div:nth-child(3) {
+  justify-content: center;
+}
+
+.home__slider {
+  position: relative;
+}
+
+.home__slider p {
+  color: var(--white);
+  text-align: center;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-size: 2.75rem;
+  line-height: 3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home__slider p span {
+  font-weight: 700;
+}
+
+.home__slider p,
+.home__slider button {
+  z-index: 2;
+}
+
+.home__slider:before {
+  content: '';
+  background: var(--overlay-brown);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.home__slider-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.home__slider .carousel img {
+  height: 850px;
+  object-fit: cover;
+}
+
+.money-safety {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  margin: 120px 0 80px;
+}
+
+.money-safety__card {
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ebebed;
+  border-radius: 80px;
+  position: relative;
+  overflow: hidden;
+  color: var(--black-800);
+
+  padding: 24px 16px;
+}
+
+.money-safety__card .heading {
+  text-transform: uppercase;
+  color: var(--black-800);
+  text-align: center;
+}
+
+.money-safety__card p {
+  margin-top: 16px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: var(--black-800);
+}
+
+.money-safety__card p span {
+  color: var(--primary);
+}
+
+.money-safety__item {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 500px;
+  color: var(--black-800);
+}
+
+.money-safety__item p {
+  margin: 0;
+}
+
+.money-safety__item p:first-of-type {
+  font-weight: 600;
+  font-size: 2.75rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.money-safety__item p:first-of-type span {
+  color: var(--primary);
+}
+
+.money-safety__item p:not(:first-of-type) {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.money-safety__item p:not(:first-of-type) span {
+  color: var(--black);
+  font-weight: 600;
+}
+
+.money-safety__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* abc */
+
+.economy {
+  position: relative;
+  padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.economy__header {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 99%;
+}
+
+.economy__description {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.economy__cards {
+  position: relative;
+}
+
+.economy__card {
+  border-radius: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+.economy__card:nth-of-type(1) {
+  background-image: url('../../images/draws/card-background-1.png');
+  width: 380px;
+  height: 580px;
+  position: absolute;
+  top: -110px;
+  left: -110px;
+  display: none;
+}
+
+.economy__card:nth-of-type(2) {
+  background-image: url('../../images/person/woman-on-smartphone-1.png');
+  height: 500px;
+  width: 100%;
+  max-width: 470px;
+}
+
+@media (min-width: 640px) {
+  .home__search {
+    width: calc(100% - 32px);
+  }
+
+  .home__search-icon {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .economy,
+  .home__pillars,
+  .money-safety {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  /* abc */
+  .economy {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .economy__cards,
+  .economy__description {
+    flex: 1 1 0;
+  }
+
+  .economy__description {
+    margin: 0;
+  }
+
+  .money-safety__card p {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .money-safety__card .heading {
+    text-align: initial;
+  }
+
+  .money-safety__card {
+    height: 600px;
+    padding-left: 80px;
+    padding-top: 142px;
+  }
+
+  .money-safety__card img {
+    position: absolute;
+    right: 75px;
+    bottom: 0;
+  }
+
+  .money-safety__description {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .home__pillars > .content-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .home__pillars > .content-container > div:nth-child(3) {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .economy {
+    gap: 88px;
+  }
+
+  .economy__card:nth-of-type(1) {
+    display: block;
+  }
+
+  .economy__cards,
+  .economy__description {
+    flex: initial;
+  }
+
+  .economy__card:nth-of-type(2) {
+    height: 720px;
+  }
+
+  .home__pillars > .content-container {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+  .home__pillars > .content-container > div:nth-child(3) {
+    grid-column: initial;
+  }
+
+  .home__slider p {
+    top: 190px;
+    right: 136px;
+    text-align: right;
+  }
+}
