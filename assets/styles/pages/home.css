@@ -49,33 +49,22 @@
   display: flex;
   background-color: var(--white);
   border-radius: 16px;
-  height: 64px;
+  height: 48px;
   width: calc(100% - 16px);
   max-width: 1064px;
   margin: 0 auto;
   padding: 8px;
   justify-content: space-between;
   align-items: center;
-  gap: 16px;
-}
-
-.home__search-icon {
-  display: none;
+  gap: 8px;
 }
 
 .home__search input {
   width: 100%;
-}
-
-.home__search button {
-  background: var(--primary);
-  border-radius: 16px;
-  padding: 0 20px;
-  color: var(--white);
-  font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
+  height: 100%;
   border: none;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .home__pillars {
@@ -85,6 +74,7 @@
 .home__pillars > .content-container {
   display: grid;
   gap: 24px;
+  grid-template-rows: repeat(3, 400px);
 }
 
 .home__pillars > .content-container p {
@@ -97,7 +87,8 @@
 
 .home__pillars > .content-container > div {
   display: grid;
-  height: 600px;
+  height: 100%;
+  max-height: 600px;
   border-radius: 40px;
   background-size: cover;
 }
@@ -106,7 +97,7 @@
   background-image: url('../../images/nature-places/beach-1.jpg');
   align-items: flex-start;
   padding-top: 80px;
-  padding-left: 60px;
+  text-align: center;
 }
 
 .home__pillars > .content-container > div:nth-child(2) {
@@ -133,8 +124,8 @@
   color: var(--white);
   text-align: center;
   text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  font-size: 2.75rem;
-  line-height: 3rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   font-weight: 700;
   position: absolute;
   top: 50%;
@@ -179,7 +170,7 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
-  margin: 120px 0 80px;
+  margin: 80px auto;
 }
 
 .money-safety__card {
@@ -189,8 +180,11 @@
   position: relative;
   overflow: hidden;
   color: var(--black-800);
+  padding: 24px 16px 0;
+}
 
-  padding: 24px 16px;
+.money-safety__card img {
+  width: 100%;
 }
 
 .money-safety__card .heading {
@@ -204,6 +198,7 @@
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: var(--black-800);
+  text-align: center;
 }
 
 .money-safety__card p span {
@@ -213,7 +208,7 @@
 .money-safety__item {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 8px;
   width: 100%;
   max-width: 500px;
   color: var(--black-800);
@@ -225,8 +220,8 @@
 
 .money-safety__item p:first-of-type {
   font-weight: 600;
-  font-size: 2.75rem;
-  line-height: 3rem;
+  font-size: 1.75rem;
+  line-height: 2rem;
   text-align: center;
 }
 
@@ -235,8 +230,8 @@
 }
 
 .money-safety__item p:not(:first-of-type) {
-  font-size: 1.75rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
@@ -249,13 +244,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  gap: 40px;
 }
-
-/* abc */
 
 .economy {
   position: relative;
-  padding-top: 160px;
+  padding-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -270,8 +264,27 @@
 
 .economy__description {
   width: 100%;
-  max-width: 540px;
   margin: 0 auto;
+}
+
+.economy__description h2 {
+  font-size: 1.75rem;
+  line-height: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.economy__description h2 span {
+  font-weight: 700;
+}
+
+.economy__description p {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+.economy__description p span {
+  font-weight: 600;
 }
 
 .economy__cards {
@@ -292,6 +305,7 @@
   top: -110px;
   left: -110px;
   display: none;
+  z-index: -1;
 }
 
 .economy__card:nth-of-type(2) {
@@ -301,17 +315,47 @@
   max-width: 470px;
 }
 
+.home__search-icon {
+  display: none;
+}
+
 @media (min-width: 640px) {
   .home__search {
     width: calc(100% - 32px);
   }
 
   .home__search-icon {
-    display: block;
+    display: initial;
+  }
+
+  .home__search-icon {
+    font-size: 32px;
+    color: var(--gray-400);
+    margin-left: 16px;
   }
 }
 
 @media (min-width: 768px) {
+  .economy__description h2 {
+    font-size: 3.75rem;
+    line-height: 4rem;
+  }
+
+  .economy__description p {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+
+  .home__search {
+    gap: 16px;
+    height: 64px;
+  }
+
+  .home__slider p {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+
   .economy,
   .home__pillars,
   .money-safety {
@@ -319,11 +363,10 @@
     padding-right: 32px;
   }
 
-  /* abc */
   .economy {
-    flex-direction: row;
     justify-content: center;
     gap: 40px;
+    padding-top: 160px;
   }
 
   .economy__cards,
@@ -335,9 +378,19 @@
     margin: 0;
   }
 
+  .money-safety__item p:first-of-type {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+
+  .money-safety {
+    padding-bottom: 120px;
+  }
+
   .money-safety__card p {
     font-size: 2rem;
     line-height: 2.25rem;
+    text-align: left;
   }
 
   .money-safety__card .heading {
@@ -345,15 +398,15 @@
   }
 
   .money-safety__card {
-    height: 600px;
-    padding-left: 80px;
-    padding-top: 142px;
+    padding-left: 50px;
+    padding-top: 100px;
   }
 
   .money-safety__card img {
     position: absolute;
-    right: 75px;
+    right: -20%;
     bottom: 0;
+    width: initial;
   }
 
   .money-safety__description {
@@ -361,8 +414,18 @@
     gap: 32px;
   }
 
+  .money-safety__item {
+    gap: 40px;
+  }
+
+  .home__pillars > .content-container > div:nth-child(1) {
+    padding-left: 60px;
+    text-align: initial;
+  }
+
   .home__pillars > .content-container {
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 400px);
   }
 
   .home__pillars > .content-container > div:nth-child(3) {
@@ -371,12 +434,9 @@
 }
 
 @media (min-width: 1024px) {
-  .economy {
-    gap: 88px;
-  }
-
-  .economy__card:nth-of-type(1) {
-    display: block;
+  .money-safety__card {
+    padding-left: 80px;
+    padding-top: 142px;
   }
 
   .economy__cards,
@@ -386,11 +446,14 @@
 
   .economy__card:nth-of-type(2) {
     height: 720px;
+    margin: 0 auto;
   }
 
   .home__pillars > .content-container {
     grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 600px;
   }
+
   .home__pillars > .content-container > div:nth-child(3) {
     grid-column: initial;
   }
@@ -399,5 +462,34 @@
     top: 190px;
     right: 136px;
     text-align: right;
+  }
+
+  .money-safety__card img {
+    right: 50px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .economy {
+    gap: 88px;
+    flex-direction: row;
+  }
+
+  .economy__cards {
+    width: 470px;
+  }
+
+  .economy__card:nth-of-type(2) {
+    margin: initial;
+  }
+
+  .economy__description {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .economy__card:nth-of-type(1) {
+    display: block;
   }
 }
