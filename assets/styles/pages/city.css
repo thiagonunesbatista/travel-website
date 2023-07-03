@@ -1,3 +1,7 @@
+.navbar {
+  background-color: var(--black-800);
+}
+
 .attractions {
   display: flex;
   flex-direction: column;
@@ -8,7 +12,8 @@
   background-color: var(--gray-200);
 }
 
-.city .content-container {
+.city > .content-container,
+.city form.content-container {
   padding: 36px 8px;
 }
 
@@ -62,7 +67,7 @@
 }
 
 .places__title {
-  color: var(--primary);
+  color: var(--black-800);
   font-weight: 700;
   text-transform: uppercase;
   font-size: 2rem;
@@ -74,7 +79,7 @@
 .places__description {
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: var(--brown-300);
+  color: var(--black-500);
   margin-top: 8px;
   text-align: center;
 }
@@ -89,7 +94,7 @@
 .places__price {
   font-size: 1.75rem;
   line-height: 2rem;
-  color: var(--brown-500);
+  color: var(--black-800);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -119,9 +124,9 @@
   font-size: 2.75rem;
   line-height: 3rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--black-800);
   padding-bottom: 20px;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--black-800);
   margin-bottom: 32px;
   text-align: center;
 }
@@ -152,7 +157,7 @@
 .events__item p {
   font-size: 1.5rem;
   line-height: 1.75rem;
-  color: var(--primary);
+  color: var(--black-800);
   text-align: center;
 }
 
@@ -197,12 +202,12 @@
   font-weight: 500;
   border: none;
   padding: 8px 28px;
-  color: var(--brown-400);
+  color: var(--black-500);
   width: 100%;
 }
 
 .form input::placeholder {
-  color: var(--brown-400);
+  color: var(--black-500);
 }
 
 @media (min-width: 768px) {
@@ -210,7 +215,8 @@
     font-size: 1.75rem;
   }
 
-  .city .content-container {
+  .city > .content-container,
+  .city .form.content-container {
     padding: 36px 16px;
   }
 

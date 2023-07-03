@@ -7,7 +7,6 @@
 
 .home .navbar {
   position: fixed;
-  z-index: 1;
   width: 100%;
 }
 
@@ -41,14 +40,13 @@
 .hero-header .heading-secondary {
   text-align: center;
   color: var(--white);
-  text-transform: uppercase;
   margin-bottom: 44px;
 }
 
 .home__search {
   display: flex;
   background-color: var(--white);
-  border-radius: 16px;
+  border-radius: 40px;
   height: 48px;
   width: calc(100% - 16px);
   max-width: 1064px;
@@ -57,6 +55,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 8px;
+  overflow: hidden;
 }
 
 .home__search input {
@@ -270,12 +269,6 @@
 .economy__description h2 {
   font-size: 1.75rem;
   line-height: 2rem;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.economy__description h2 span {
-  font-weight: 700;
 }
 
 .economy__description p {
@@ -337,23 +330,23 @@
 
 @media (min-width: 768px) {
   .economy__description h2 {
-    font-size: 3.75rem;
-    line-height: 4rem;
+    font-size: 3.5rem;
+    line-height: 3.75rem;
   }
 
   .economy__description p {
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .home__search {
     gap: 16px;
-    height: 64px;
+    height: 60px;
   }
 
   .home__slider p {
-    font-size: 2.75rem;
-    line-height: 3rem;
+    font-size: 1.75rem;
+    line-height: 2rem;
   }
 
   .economy,

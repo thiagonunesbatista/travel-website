@@ -3,7 +3,7 @@
   top: 0;
   padding: 8px 0;
   background: rgba(27, 11, 0, 0.75);
-  z-index: 100;
+  z-index: 1000;
 }
 
 .navbar__logo {
@@ -13,6 +13,7 @@
 
 .navbar__logo img {
   width: 70%;
+  max-width: 160px;
 }
 
 .navbar .content-container {
@@ -21,6 +22,7 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 20px;
+  padding: 0 16px;
 }
 
 .navbar ul {
@@ -49,12 +51,20 @@
   }
 
   .navbar a {
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
   }
 }
 
 @media (min-width: 1024px) {
+  .navbar .content-container {
+    justify-content: space-evenly;
+  }
+
+  .navbar a {
+    margin: initial;
+  }
+
   .navbar ul {
     display: flex;
   }

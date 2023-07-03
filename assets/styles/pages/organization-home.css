@@ -1,3 +1,7 @@
+.navbar {
+  background-color: var(--black-800);
+}
+
 .organization {
   background-color: var(--gray-300);
 }
@@ -24,6 +28,10 @@
   text-align: justify;
 }
 
+.organization__text > p span {
+  font-weight: 700;
+}
+
 .organization__options {
   display: flex;
   flex-direction: column;
@@ -42,15 +50,24 @@
   font-size: 1.5rem;
   line-height: 1.75rem;
   margin-bottom: 8px;
+  color: var(--black-800);
+  font-weight: 400;
+}
+
+.organization__text h1 span {
+  color: var(--primary);
 }
 
 .organization__text h1 br {
   display: none;
 }
 
+.organization p {
+  color: var(--black-800);
+}
+
 .organization p,
 .organization__text h1 {
-  color: var(--primary);
   text-align: center;
 }
 
@@ -125,6 +142,7 @@
     grid-area: options;
     align-items: flex-start;
     padding-left: 40px;
+    align-items: center;
   }
 
   .organization__text h1,
@@ -142,8 +160,8 @@
   }
 
   .organization__text > p {
-    font-size: 2rem;
-    line-height: 2.25rem;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
   }
 
   .organization__action {
