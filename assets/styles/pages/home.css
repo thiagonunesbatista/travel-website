@@ -65,6 +65,9 @@
   padding-left: 8px;
   padding-right: 8px;
 }
+.home__search input::placeholder {
+  text-align: center;
+}
 
 .home__pillars {
   margin: 48px 0;
