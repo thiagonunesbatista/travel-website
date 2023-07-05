@@ -37,6 +37,7 @@ h1 {
   width: 10%;
 }
 .bt {
+  position: relative;
   margin-top: 4%;
   margin-left: 12%;
 }
@@ -146,4 +147,13 @@ h4 {
   cursor: pointer;
   color: #fff;
   border-radius: 25px;
+}
+.cartão {
+  position: absolute;
+  margin-top: 30%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  position: absolute;
 }
