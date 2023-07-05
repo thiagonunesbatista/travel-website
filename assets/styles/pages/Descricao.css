@@ -1,0 +1,82 @@
+.section-main {
+  width: 100%;
+  height: 60vh;
+  background-image: url("../../images/descricao/Cristo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: var(--gray-200);
+}
+
+
+.div-primary {
+  position: relative;
+  top: 30%;
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+}
+
+
+
+.div-primary i {
+  position: relative;
+  bottom: 15vh;
+  left: 2vw;
+  align-self: flex-start;
+  font-size: 60px;
+  font-weight: 900;
+  color: var(--white);
+}
+
+
+.icon-loc i {
+  position: relative;
+  top: 33vh;
+  left: 0.3999999999999986vw;
+  font-size: 40px;
+  font-weight: bolder;
+  color: var(--primary);
+}
+
+.main-text {
+  margin-top: 25vh;
+  color: var(--white);
+  font-size: 2.625rem;
+  font-weight: 1000;
+}
+
+.segundary-text {
+  color: var(--black-800);
+  font-size: 2.5rem;
+}
+
+.text-valor {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+}
+
+
+.text-valor h3{
+  align-items: end;
+  color: var(--black-800);
+  font-size: 2.5rem;
+  font-weight: 1000;
+}
+
+.text-valor h4{
+  font-size: 1.875rem;
+  color: var(--white);
+}
+
+.text-body {
+  font-size: 1.4rem;
+}
+
+.star {
+}
