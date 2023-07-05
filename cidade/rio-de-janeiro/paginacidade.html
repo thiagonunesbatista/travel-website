@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pense, viaje - Rio de Janeiro</title>
+
+    <link rel="stylesheet" href="../../assets/styles/global.css" />
+    <link rel="stylesheet" href="../../assets/styles/reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="../../assets/styles/components/navbar-bootstrap.css"
+    />
+    <link rel="stylesheet" href="../../assets/styles/pages/city.css" />
+  </head>
+  <body class="city">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../../assets/images/branding/logo.png"
+          alt="Logo da Pense, viaje"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >organização <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">financeiro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">quem somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">f.a.q</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="content-container">
+      <aside class="city-banner">
+        <h1>Rio de Janeiro</h1>
+      </aside>
+
+      <form class="form content-container">
+        <div class="form__calendar">
+          <span>
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+          </span>
+          <input
+            type="text"
+            class="form__date"
+            placeholder="Escolha a data de ida"
+          />
+        </div>
+
+        <input type="text" placeholder="nº de pessoas" />
+      </form>
+
+      <section class="attractions">
+        <div class="places">
+          <button class="places__item">
+            <img
+              src="../../assets/images/nature-places/cristo-redentor-from-bottom-view.jpg"
+            />
+            <div>
+              <p class="places__title">cristo redentor</p>
+              <p class="places__description">
+                Com uma vista sensacional, no Rio de Janeiro ir ao Cristo
+                Redentor é um passeio imperdível, com paisagens de cair o
+                queixo!
+              </p>
+            </div>
+            <p class="places__price">
+              R$170 <span><i class="fa-solid fa-heart"></i></span>
+            </p>
+          </button>
+          <button class="places__item">
+            <img
+              src="../../assets/images/nature-places/pao-de-acucar-sunset-1.jpg"
+            />
+            <div>
+              <p class="places__title">pão de açucar</p>
+              <p class="places__description">
+                Conheça o morro mais bonito do Rio de Janeiro, ande de bondinho
+                e conheça um dos principais pontos turísticos
+              </p>
+            </div>
+            <p class="places__price">
+              R$770 <span><i class="fa-solid fa-heart"></i></span>
+            </p>
+          </button>
+          <button class="places__item">
+            <img
+              src="../../assets/images/tours/gliding-rio-de-janeiro-1.jpeg"
+            />
+            <div>
+              <p class="places__title">passeio asa delta</p>
+              <p class="places__description">
+                Veja o Rio de Janeiro de um ângulo completamente novo durante
+                uma excursão privada que oferece a opção de asa-delta ou
+                parapente sobre a Cidade Eterna.
+              </p>
+            </div>
+            <p class="places__price">
+              R$150 <span><i class="fa-solid fa-heart"></i></span>
+            </p>
+          </button>
+        </div>
+        <section class="events">
+          <p class="events__title">Eventos</p>
+
+          <ul class="events__items">
+            <li class="events__item">
+              <button>
+                <p>Stand up</p>
+                <p>Paul Cabannes</p>
+              </button>
+            </li>
+            <li class="events__item">
+              <button>
+                <p>Show</p>
+                <p>Afrojack & Steve Aoki</p>
+              </button>
+            </li>
+            <li class="events__item">
+              <button>
+                <p>Jogo de futebol</p>
+                <p>Grêmio x Flamengo</p>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </section>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

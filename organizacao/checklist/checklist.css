@@ -1,0 +1,65 @@
+.listachecklist, .numtarefas, #additens{
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+
+
+}
+.listachecklist {
+    padding: 30px;
+    overflow-y: scroll;
+    height: 500px;
+}
+
+.listachecklist::-webkit-scrollbar {
+    height: 10px;
+  }
+
+.listachecklist h1 {
+    font-weight: 700;
+    color: orange;
+}
+
+.listachecklist h2 {
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.numtarefas span {
+    background-color: orange; 
+    padding: 10px; 
+    border-radius: 20px; 
+    color: white; 
+    font-weight: 700;
+    line-height: 90px;
+}
+
+.checklist {
+    background-color: #E5E5E5;
+}
+
+.listachecklist input {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+
+}
+
+#additens {
+    border: orange solid 2px;
+    width: 70%; 
+    margin: 0 15px;
+    height: 65px;
+}
+
+@media (max-width: 550px) {
+    #addbutton {
+        width: 100%;
+        margin: 20px 0;
+    }
+    #additens { 
+        width: 100%;
+        margin: 0;
+    }
+}
+

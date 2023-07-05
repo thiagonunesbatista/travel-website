@@ -1,0 +1,41 @@
+.navbar {
+  justify-content: space-around;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar-collapse {
+  flex-grow: initial;
+}
+
+.navbar img {
+  width: 100%;
+  max-width: 140px;
+}
+
+.nav-link {
+  color: var(--white) !important;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
+.navbar-toggler {
+  background-color: var(--gray-200);
+  padding: 0.25rem;
+  margin-left: 1.25rem;
+}
+
+@media (min-width: 992px) {
+  .navbar img {
+    max-width: 160px;
+  }
+
+  .nav-link {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+}
