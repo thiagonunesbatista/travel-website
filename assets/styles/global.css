@@ -14,10 +14,12 @@
   --overlay-dark: rgba(27, 11, 0, 0.82);
 }
 
+
 /* width */
 ::-webkit-scrollbar {
   width: 12px;
 }
+
 
 /* Track */
 ::-webkit-scrollbar-track {
