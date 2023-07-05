@@ -127,7 +127,7 @@
 
 @media (min-width: 1280px) {
   .organization__grid {
-    grid-template-areas: 'image text' 'image options';
+    grid-template-areas: "image text" "image options";
   }
 
   .organization__image {
@@ -165,9 +165,9 @@
   }
 
   .organization__action {
-    font-size: 2rem;
+    font-size: 1.9rem;
     line-height: 2.25rem;
-    padding: 16px;
+    padding: 20px;
   }
 
   .organization__options > p {

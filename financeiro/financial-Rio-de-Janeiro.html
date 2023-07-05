@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pense, viaje</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Font Awesome Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -18,47 +28,52 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Global Styles -->
     <link rel="stylesheet" href="../assets/styles/global.css" />
     <link rel="stylesheet" href="../assets/styles/reset.css" />
 
-    <!-- Component Styles -->
-    <link rel="stylesheet" href="../assets/styles/components/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/styles/components/navbar-bootstrap.css"
+    />
 
-    <!-- Page Style -->
-    <link rel="stylesheet" href="../assets/styles/pages/financial-Rio-de-Janeiro.css" />
-
-    <!-- Meta tags HTML -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pense, viaje: financeiro</title>
+    <link
+      rel="stylesheet"
+      href="../assets/styles/pages/financial-Rio-de-Janeiro.css"
+    />
   </head>
-<body class="checklist">
-    <nav class="navbar">
-      <div class="content-container">
-        <a href="/" class="navbar__logo">
-          <img
-            src="../assets/images/branding/logo.png"
-            alt="Logo da Pense, viaje"
-          />
-        </a>
-
-        <ul>
-          <li>
-            <a href="#">financeiro</a>
+  <body class="home">
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-around">
+      <a class="navbar-brand" href="../index.html">
+        <img
+          src="../assets/images/branding/logo.png"
+          alt="Logo da Pense, viaje"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="../organizacao/organizacao_inicial.html"
+              >organização <span class="sr-only">(current)</span></a
+            >
           </li>
-          <li>
-            <a href="#">organização</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../financeiro/financial.html"
+              >financeiro</a
+            >
           </li>
-          <li>
-            <a href="#">quem somos</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../F.a.q/Index.html">f.a.q</a>
           </li>
-          <li>
-            <a href="#">login</a>
-          </li>
-
-          <li>
-            <a href="#">FAQ</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../Login/login.html">login</a>
           </li>
         </ul>
       </div>
@@ -67,37 +82,36 @@
     <div class="headerPage">
       <h1 class="headerText">Rio de Janeiro</h1>
     </div>
-    
-    <div class="caixinhaSection">
-        <p class="caixinhaText">Sua caixinha</p>
-        <div class="caixinhaBox"><div class="caixinhaFill"></div></div>
-      </div>
 
+    <div class="caixinhaSection">
+      <p class="caixinhaText">Sua caixinha</p>
+      <div class="caixinhaBox"><div class="caixinhaFill"></div></div>
+    </div>
 
     <div class="moneySection">
-        <div class="moneyBox" id="meta">
-            <p class="moneyHeader">Meta:</p>
-            <p class="moneyValue">R$1.090,00</p>
-        </div>
-        <div class="moneyBox" id="guardado">
-            <p class="moneyHeader">Guardado:</p>
-            <p class="moneyValue">R$520,00</p>
-        </div>
+      <div class="moneyBox" id="meta">
+        <p class="moneyHeader">Meta:</p>
+        <p class="moneyValue">R$1.090,00</p>
+      </div>
+      <div class="moneyBox" id="guardado">
+        <p class="moneyHeader">Guardado:</p>
+        <p class="moneyValue">R$520,00</p>
+      </div>
     </div>
 
     <div class="infosSection">
-        <div class="infosBox" id="travelDate">
-            <p class="infoHeader">Data da Viagem:</p>
-            <p class="infoVariable">15/10/2023</p>
-        </div>
-        <div class="infosBox" id="automaticDebit">
-            <p class="infoHeader">Débito Automático:</p>
-            <p class="infoVariable">Ativo</p>
-        </div>
-        <div class="infosBox" id="monthlyPayment">
-            <p class="infoHeader">Parcela Mensal:</p>
-            <p class="infoVariable">R$833/mês</p>
-        </div>
+      <div class="infosBox" id="travelDate">
+        <p class="infoHeader">Data da Viagem:</p>
+        <p class="infoVariable">15/10/2023</p>
+      </div>
+      <div class="infosBox" id="automaticDebit">
+        <p class="infoHeader">Débito Automático:</p>
+        <p class="infoVariable">Ativo</p>
+      </div>
+      <div class="infosBox" id="monthlyPayment">
+        <p class="infoHeader">Parcela Mensal:</p>
+        <p class="infoVariable">R$833/mês</p>
+      </div>
     </div>
 
     <div class="activitiesSection">
@@ -105,60 +119,75 @@
         <h3 class="activitiesHeader">Atividades Selecionadas:</h3>
         <div class="activities">
           <div class="activity">
-              <img class="activityPhoto" src="../assets/images/financial01/Voo Asa Delta.png" alt="Voo asa Delta">
-              <div class="activityText">
-                  <p class="activityHeader">Voo asa Delta</p>
-                  <p class="activityParagraph">Valor por pessoa:</p>
-                  <p class="activityValue">R$700,00</p>
-              </div>
-              <label class="checkboxActivity">
-                <input type="checkbox"  checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <!-- <input type="checkbox" name="checkboxActivity" value="VooAsaDelta" checked> -->
+            <img
+              class="activityPhoto"
+              src="../assets/images/financial01/Voo Asa Delta.png"
+              alt="Voo asa Delta"
+            />
+            <div class="activityText">
+              <p class="activityHeader">Voo asa Delta</p>
+              <p class="activityParagraph">Valor por pessoa:</p>
+              <p class="activityValue">R$700,00</p>
+            </div>
+            <label class="checkboxActivity">
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <input type="checkbox" name="checkboxActivity" value="VooAsaDelta" checked> -->
           </div>
 
           <div class="activity">
-              <img class="activityPhoto" src="../assets/images/financial01/Pão de Açucar.png" alt="Pão-de-Açucar">
-              <div class="activityText">
-                  <p class="activityHeader">Pão-de-Açucar</p>
-                  <p class="activityParagraph">Valor por pessoa:</p>
-                  <p class="activityValue">R$150,00</p>
-              </div>
-              <label class="checkboxActivity">
-                <input type="checkbox"  checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <!-- <input type="checkbox" name="checkboxActivity" value="Pao-de-Acucar" checked> -->
+            <img
+              class="activityPhoto"
+              src="../assets/images/financial01/Pão de Açucar.png"
+              alt="Pão-de-Açucar"
+            />
+            <div class="activityText">
+              <p class="activityHeader">Pão-de-Açucar</p>
+              <p class="activityParagraph">Valor por pessoa:</p>
+              <p class="activityValue">R$150,00</p>
+            </div>
+            <label class="checkboxActivity">
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <input type="checkbox" name="checkboxActivity" value="Pao-de-Acucar" checked> -->
           </div>
 
           <div class="activity">
-              <img class="activityPhoto" src="../assets/images/financial01/Oceanic Aquarium.png" alt="Oceanic Aquarium">
-              <div class="activityText">
-                  <p class="activityHeader">Oceniac Aquarium</p>
-                  <p class="activityParagraph">Valor por pessoa:</p>
-                  <p class="activityValue">R$70,00</p>
-              </div>
-              <label class="checkboxActivity">
-                <input type="checkbox"  checked="checked">
-                <span class="checkmark"></span>
-              </label>
-              <!-- <input type="checkbox" name="checkboxActivity" value="OceanicAquarium" checked> -->
+            <img
+              class="activityPhoto"
+              src="../assets/images/financial01/Oceanic Aquarium.png"
+              alt="Oceanic Aquarium"
+            />
+            <div class="activityText">
+              <p class="activityHeader">Oceniac Aquarium</p>
+              <p class="activityParagraph">Valor por pessoa:</p>
+              <p class="activityValue">R$70,00</p>
+            </div>
+            <label class="checkboxActivity">
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
+            <!-- <input type="checkbox" name="checkboxActivity" value="OceanicAquarium" checked> -->
           </div>
 
           <div class="activity">
-              <img class="activityPhoto" src="../assets/images/financial01/Cristo Redentor.png" alt="Cristo Redentor">
-              <div class="activityText">
-                  <p class="activityHeader">Cristo Redentor</p>
-                  <p class="activityParagraph">Valor por pessoa:</p>
-                  <p class="activityValue">R$170,00</p>
-              </div>
-              <label class="checkboxActivity">
-                <input type="checkbox"  checked="checked">
-                <span class="checkmark"></span>
-              </label>
+            <img
+              class="activityPhoto"
+              src="../assets/images/financial01/Cristo Redentor.png"
+              alt="Cristo Redentor"
+            />
+            <div class="activityText">
+              <p class="activityHeader">Cristo Redentor</p>
+              <p class="activityParagraph">Valor por pessoa:</p>
+              <p class="activityValue">R$170,00</p>
+            </div>
+            <label class="checkboxActivity">
+              <input type="checkbox" checked="checked" />
+              <span class="checkmark"></span>
+            </label>
           </div>
-
         </div>
       </div>
     </div>
@@ -167,9 +196,33 @@
       <div class="shareBox">
         <div class="shareText">
           <h3 class="shareHeader">Quem ama, <span>vive junto</span>!</h3>
-          <p class="shareParagraph">Compartilhe sua meta com amigos e familiares e peça sua contribuição.</p>
+          <p class="shareParagraph">
+            Compartilhe sua meta com amigos e familiares e peça sua
+            contribuição.
+          </p>
         </div>
       </div>
     </div>
 
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
