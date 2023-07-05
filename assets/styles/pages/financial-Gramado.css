@@ -1,184 +1,190 @@
-
-*, 
+*,
 *::before,
-*::after{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    color: var(--black-800);
+body {
+  color: var(--black-800);
 }
 
-span{
-    color: var(--primary);
+span {
+  color: var(--primary);
 }
 
-.headerPage{
-    background-image:linear-gradient(rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%), url("../../images/financial01/gramado-capa.jpg");
-    background-size: cover;
-    background-position: top center;
-    /* width: 72vw; */
-    height: 300px;
-    display: flex;
-    align-items: center;
-
+.headerPage {
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(255, 255, 255, 0) 50%
+    ),
+    url("../../images/financial01/gramado-capa.jpg");
+  background-size: cover;
+  background-position: top center;
+  /* width: 72vw; */
+  height: 300px;
+  display: flex;
+  align-items: center;
 }
 
-.headerText{
-    margin: 0 14vw;
-    color: var(--white);
-    font-size: 3rem;
+.headerText {
+  margin: 0 14vw;
+  color: var(--white);
+  font-size: 3rem;
 }
 
-.caixinhaSection{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.caixinhaSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.moneySection, .infosSection, .activitiesSection, .shareSection{
-    display: flex;
-    justify-content: center;
+.moneySection,
+.infosSection,
+.activitiesSection,
+.shareSection {
+  display: flex;
+  justify-content: center;
 }
 
-.caixinhaText{
-    font-weight: 900;
-    font-size: 1.3rem;
-    margin: 1rem;
+.caixinhaText {
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin: 1rem;
 }
 
-.caixinhaBox, .caixinhaFill{
-    width: 72vw;
-    height: 50px;
-    border-radius: 100px;
-    background-color: var(--gray-200);
+.caixinhaBox,
+.caixinhaFill {
+  width: 72vw;
+  height: 50px;
+  border-radius: 100px;
+  background-color: var(--gray-200);
 }
 
-.caixinhaFill{
-   width: 48%;
-   background-color: var(--primary); 
+.caixinhaFill {
+  width: 48%;
+  background-color: var(--primary);
 }
 
-.moneyBox{
-    margin: 3vh 1vw;
-    width: 35vw;
-    height: 150px;
-    background-color: var(--gray-200);
-    color: var(--black-800);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.moneyBox {
+  margin: 3vh 1vw;
+  width: 35vw;
+  height: 150px;
+  background-color: var(--gray-200);
+  color: var(--black-800);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.moneyHeader{
-    margin-left: 2rem;
-    font-size: 1.3rem;
+.moneyHeader {
+  margin-left: 2rem;
+  font-size: 1.3rem;
 }
 
-.moneyValue{
-    margin-left: 2rem;
-    margin-top: 0.5rem;
-    font-size: 3rem;
-    font-weight: 900;
+.moneyValue {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+  font-size: 3rem;
+  font-weight: 900;
 }
 
-#meta{
-    background-color: var(--primary);
-    color: var(--white)
+#meta {
+  background-color: var(--primary);
+  color: var(--white);
 }
 
-.infosBox{
-    width: 26vw;
-    height: 50px;
-    margin: 0 0.5rem;
-    border-radius: 15px;
-    background-color: var(--gray-200);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.infosBox {
+  width: 26vw;
+  height: 103px;
+  margin: 0 0.5rem;
+  border-radius: 15px;
+  background-color: var(--gray-200);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-#automaticDebit{
-    width: 18vw;
+#automaticDebit {
+  width: 18vw;
 }
 
-.infoVariable{
-    font-weight: 900;
-    font-size: 1.1rem;
+.infoVariable {
+  font-weight: 900;
+  font-size: 1.1rem;
 }
 
-.activitiesBox{
-    width: 72vw;
-    background-color: var(--gray-200);
-    border-radius: 25px;
-    margin: 3vh;
-    padding: 2rem;
+.activitiesBox {
+  width: 72vw;
+  background-color: var(--gray-200);
+  border-radius: 25px;
+  margin: 3vh;
+  padding: 2rem;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.activitiesHeader{
-    text-align: center;
-    font-size: 1.5rem;
+.activitiesHeader {
+  text-align: center;
+  font-size: 1.5rem;
 }
 
-.activities{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.activities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.activity{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: var(--white);
-    border-radius: 25px;
-    width: 35%;
-    height: 150px;
-    margin: 1rem;
-    position: relative;
+.activity {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  border-radius: 25px;
+  width: 35%;
+  height: 150px;
+  margin: 1rem;
+  position: relative;
 }
 
-.activityPhoto{
-    width: 30%;
-    margin: 1rem;
-    border-radius:200px;
-    /* height: 80%; */
+.activityPhoto {
+  width: 30%;
+  margin: 1rem;
+  border-radius: 200px;
+  /* height: 80%; */
 }
 
-.activityText{
-    width: 40%;
+.activityText {
+  width: 40%;
 }
 
-.activityHeader{
-    font-size: 1.3rem;
-    font-weight: 900;
+.activityHeader {
+  font-size: 1rem;
+  font-weight: 900;
 }
 
-.activityParagraph{
-    font-size: 0.8rem;
+.activityParagraph {
+  font-size: 0.8rem;
 }
 
-.activityValue{
-    font-size: 1.5rem;
+.activityValue {
+  font-size: 1.5rem;
 }
 
-.checkboxActivity{
-    position: absolute;
-    top: 28px;
-    right: 28px;   
+.checkboxActivity {
+  position: absolute;
+  top: 28px;
+  right: 28px;
 }
 
-input[type="checkbox"]{
-    transform: scale(1.7);
+input[type="checkbox"] {
+  transform: scale(1.7);
 }
 
 /* Não consegui fazer funcionar =/ */
@@ -191,64 +197,66 @@ input[type="checkbox"]{
     background-color: #f3f3f3;
   } */
 
-.shareBox{
-    width: 72vw;
-    background-image: url(../../images/financial01/Compartilhe\ com\ Família.png);
-    background-size: cover;
-    background-position: center center;
-    background-color: var(--black-800);
-    height: 300px;
-    border-radius: 25px;
-    margin-bottom: 2rem;
+.shareBox {
+  width: 72vw;
+  background-image: url(../../images/financial01/Compartilhe\ com\ Família.png);
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--black-800);
+  height: 300px;
+  border-radius: 25px;
+  margin-bottom: 2rem;
 }
 
-.shareText{
-    margin: 3rem;
-    width: 30%;
-    color: var(--white);
+.shareText {
+  margin: 3rem;
+  width: 30%;
+  color: var(--white);
 }
 
-.shareHeader{
-    font-size: 2.5rem;
+.shareHeader {
+  font-size: 2.5rem;
 }
 
-.shareParagraph{
-    font-size: 1.3rem;
+.shareParagraph {
+  font-size: 1.3rem;
 }
 
-@media (max-width: 1024px){
-    .moneySection, .infosSection, .activitiesSection, .shareSection, .activities{
-        flex-direction: column;
-        gap: 16px;
-        align-items: center;
-    }
+@media (max-width: 1024px) {
+  .moneySection,
+  .infosSection,
+  .activitiesSection,
+  .shareSection,
+  .activities {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
 
+  .moneySection {
+    margin-bottom: 1rem;
+  }
 
+  .caixinhaBox {
+    margin-bottom: 1rem;
+  }
 
-    .moneySection{
-        margin-bottom: 1rem;
-    }
+  .moneyBox {
+    margin: 0;
+    width: 350px;
+  }
 
-    .caixinhaBox{
-        margin-bottom: 1rem;
-    }
+  .infosBox,
+  #automaticDebit {
+    width: 350px;
+  }
 
-    .moneyBox{
-        margin: 0;
-        width: 350px;
-    }
+  .activity {
+    width: 350px;
+  }
 
-    .infosBox, #automaticDebit{
-        width: 350px;
-    }
-
-    .activity{
-        width: 350px;
-    }
-
-    .shareText {
-        margin: 1.5rem;
-        width: 50%;
-    }
-
+  .shareText {
+    margin: 1.5rem;
+    width: 50%;
+  }
 }
