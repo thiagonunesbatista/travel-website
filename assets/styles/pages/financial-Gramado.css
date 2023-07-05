@@ -16,7 +16,7 @@ span{
 }
 
 .headerPage{
-    background-image:linear-gradient(rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%), url("../../images/financial01/Rio\ de\ Janeiro.png");
+    background-image:linear-gradient(rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%), url("../../images/financial01/gramado-capa.jpg");
     background-size: cover;
     background-position: top center;
     /* width: 72vw; */
@@ -57,7 +57,7 @@ span{
 }
 
 .caixinhaFill{
-   width: 30%;
+   width: 48%;
    background-color: var(--primary); 
 }
 
@@ -150,7 +150,7 @@ span{
 .activityPhoto{
     width: 30%;
     margin: 1rem;
-    border-radius:100px;
+    border-radius:200px;
     /* height: 80%; */
 }
 
