@@ -1,0 +1,95 @@
+*, 
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    color: var(--black-800);
+}
+
+.financialContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mainText{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem;
+    font-size: 1.7rem;
+}
+
+.mainParagraph{
+    margin-top: 1rem;
+}
+
+.citys{
+    display: flex;
+}
+
+.travelBox{
+    margin: 0px 1vw;
+    width: 35vw;
+    height: 250px;
+    background-color: var(--black-800);
+    color: #fff;
+    border-radius: 25px;
+}
+
+.travelTexto{
+    font-size: 1.7rem;
+    font-weight: 800;
+    padding: 2rem 2.5rem;
+}
+
+.shareSection{
+    display: flex;
+    justify-content: center;
+}
+
+.shareBox{
+    margin: 2rem;
+    width: 72vw;
+    height: 250px;
+    background-color:var(--black-800);
+    color: #fff;
+    border-radius: 25px;
+}
+
+.shareText{
+    font-size: 2rem;
+    padding: 2rem 0px 0px 2.5rem;
+    width: 60%;
+}
+
+.shareParagraph{
+    padding: 16px 0px 0px 2.5rem;
+    width: 50%;
+    font-size: 1.3rem;
+}
+
+#RioDeJaneiro{
+    background-image:linear-gradient(rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%), url("../../images/financial01/Rio\ de\ Janeiro.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#Gramado{
+    background-image: linear-gradient(rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 50%), url("../../images/financial01/Gramado.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+#IndiqueAmigo{
+    background-image: url("../../images/financial01/Compartilhe\ com\ Amigo.png");
+    background-size: cover;
+    background-position: center center;
+}
